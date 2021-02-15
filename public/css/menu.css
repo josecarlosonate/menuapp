@@ -1,0 +1,138 @@
+
+#infoBody{
+    display: none;
+}
+
+.fondoMenu{
+    margin: 10px;
+    /* overflow: hidden; */
+    background-color: #151515;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+}
+
+.caja{
+    border: 5px dotted #fff;
+    padding-right: 10px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.foto{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100%;
+    height: 350px;
+    /* margin: 10px; */
+    border: 10px solid #ff9919;
+    order: 1;
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40%;
+    margin-left: -15%;
+    position: relative;
+    background: url(../layout/img/categorias/desayuno.jpg);
+    background-size: cover;
+
+}
+.fotoBorder{
+    background-color: transparent;
+    border-radius: 50%;
+    width: 125%;
+    height: 380px;
+    position: absolute;
+    margin-top: -9%;
+    margin-left: 9%;
+    border: 2px solid #ff9919;
+    z-index: 3;
+}
+/* div para el nombre de categoria  */
+.nombreCategoria{
+    background-color: #ff9919;
+    color: #1F1B18;
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 70%;
+    /* padding: 0px 50px; */
+    font-size: 27px;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-weight: bold;
+    position: relative;
+    order: 2; 
+    
+}
+.nombreCategoria::after{
+position: absolute;
+content: ''; 
+top: 0;
+bottom: 0;
+right: 0;
+margin-top: auto;
+margin-bottom: auto;
+width: 18%;
+height: 100%;
+z-index: 1;
+background: url(../layout/img/menu/flechain.png);
+background-position: center;
+background-size: cover;
+border-left: 3px solid red;
+} 
+.nombreCategoria p{
+    margin-bottom: 0;
+}
+/* nombre de la cateforia elemento p  */
+.categoria{
+    width: 80%;
+    padding: 5px 0;
+}
+
+.subCategorias{
+    padding: 5px;
+    order: 3;
+}
+
+.ulsubcategorias{
+    list-style: none;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    color: #ff9919;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 19px;
+}
+h6{
+    text-align: left;
+    font-size: 14px;
+}
+
+/* / RESPONSIVE
+   ========================================================================= / */
+
+/* / Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- / */
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+/* / Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- / */
+@media (min-width: 768px) and (max-width: 991px) { 
+    
+}
+
+/* / Móviles en vertical
+   ------------------------------------------------------------------------- */ 
+@media (min-width: 576px) and (max-width: 767px) { }
+
+/* / Móviles en vertical*/
+@media (max-width: 575px) {  }
